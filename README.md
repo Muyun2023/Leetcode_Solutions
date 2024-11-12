@@ -10,10 +10,7 @@ Solutions are also welcome for any other *supported* language on leetcode.com!
 
 ## Contributing
 **Please read the [contributing guidlines](./CONTRIBUTING.md) before opening a PR**
-
-
 To contribute, please fork this repo and open a PR adding a [missing solution](#missing-solutions) from the supported languages.
-
 If you would like to have collaborator permissions on the repo to merge your own PRs or review others' PRs please let me know. 
 
 ## Missing Solutions
