@@ -1,0 +1,41 @@
+class Solution {
+    public int search(int[] nums, int target) {
+        if (nums == null || nums.length == 0) {
+            return -1;
+        }
+
+        int start = 0, end = nums.length - 1;
+        while (start + 1 < end) {
+            int mid = start + (end - start) / 2;
+
+            if (nums[mid] > nums[end]) {
+                if (nums[start] <= target && target <= nums[mid]) {
+                    end = mid;
+                } else {
+                    start = mid;
+                }
+            } else {
+                if (nums[mid] <= target && target <= nums[end]) {
+                    start = mid;
+                } else {
+                    end = mid;
+                }
+            }
+        }
+
+        if (nums[start] == target) {return start;}
+        if (nums[end] == target) {return end;}
+        return -1; //别忘记了，可能数组中不存在target值
+    }
+}
+
+/**审题
+升序数组，无重复数字，要求logn复杂度
+找的不是最小值，找的是特定数字
+直接解法：
+两次二分，第一次二分找到最小值，然后根据最小数值
+确定是在哪半边找目标值
+在那个区间再进行二分查找
+
+如果面试官要求只能用一次二分？难度就加大了
+**/
