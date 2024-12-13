@@ -11,8 +11,6 @@ func longestPalindrome(s string) string {
 			l--
 			r++
 		}
-		l, r = i, i+1
-
 	}
 	return res
 }
