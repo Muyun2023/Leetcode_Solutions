@@ -17,10 +17,7 @@ func reverseKGroup(head *ListNode, k int) *ListNode {
             prev = curr
             curr = tmp
         }
-        
-        tmp := groupPrev.Next
-        groupPrev.Next = kth
-        groupPrev = tmp
+
     }
     return dummy.Next
 }
