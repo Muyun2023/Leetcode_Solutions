@@ -6,9 +6,6 @@ func subsets(nums []int) [][]int {
 	var backtrack func(idx int)
 	backtrack = func(idx int) {
 		ans = append(ans, append([]int{}, curr...))
-		if idx == len(nums) {
-			return
-		}
 		for i := idx; i < len(nums); i++ {
 			curr = append(curr, nums[i])
 			backtrack(i + 1)
