@@ -9,9 +9,9 @@ func twoSum(numbers []int, target int) []int {
         }
         
         if n > target {
-            p2--
+            p2++
         }else{
-            p1++
+            p1--
         }
     }
     
