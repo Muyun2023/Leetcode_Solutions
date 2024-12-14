@@ -10,11 +10,3 @@ func maxSubArray(nums []int) int {
     }
     return result
 }
-
-// Golang does not have a built-in max for integers
-func max(a int, b int) int {
-    if a > b {
-        return a
-    }
-    return b
-}
