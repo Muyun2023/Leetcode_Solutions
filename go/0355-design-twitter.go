@@ -70,18 +70,4 @@ func (this *Twitter) GetNewsFeed(userId int) []int {
     }
     return res
 }
-
-
-func (this *Twitter) Follow(followerId int, followeeId int)  {
-    if _, ok := this.followMap[followerId]; !ok {
-        this.followMap[followerId] = make(map[int]bool)
-    }
-    this.followMap[followerId][followeeId] = true
-}
-
-
-func (this *Twitter) Unfollow(followerId int, followeeId int)  {
-    if _, ok := this.followMap[followerId]; ok {
-        delete(this.followMap[followerId], followeeId)
-    }
 }
