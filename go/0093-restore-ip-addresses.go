@@ -35,10 +35,3 @@ func restoreIpAddresses(s string) []string {
 	backtrack(0,0,"")
 	return res
 }
-
-func min(a, b int) int {
-	if a < b {
-		return a
-	}
-	return b
-}
