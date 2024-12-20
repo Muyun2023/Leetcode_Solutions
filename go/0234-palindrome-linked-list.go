@@ -1,21 +1,3 @@
-/**
-Move slow and fast pointer along the list.
-Slow pointer nodes are added to reversed list.
-When no more fast move is possible, iterate
-along slow and back along reversed list while
-checking for value equality
-
-Time: O(N)
-Space: O(1)
-**/
-
-/**
- * Definition for singly-linked list.
- * type ListNode struct {
- *     Val int
- *     Next *ListNode
- * }
- */
 func isPalindrome(head *ListNode) bool {
 	slow, fast := head, head
 	var rev *ListNode
