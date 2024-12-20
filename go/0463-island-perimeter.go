@@ -17,13 +17,4 @@ func islandPerimeter(grid [][]int) int {
         perim += dfs(i - 1, j)
         return perim
     }
-    
-    for i := 0; i < ROWS; i++ {
-        for j := 0; j < COLS; j++ {
-            if grid[i][j] != 0 {
-                return dfs(i, j)
-            }
-        }
-    }
-    return -1
 }
