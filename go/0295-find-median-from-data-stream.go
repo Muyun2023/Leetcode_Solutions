@@ -38,13 +38,3 @@ func (this *MedianFinder) AddNum(num int)  {
         heap.Push(&this.small, -1 * val)
     }
 }
-
-
-func (this *MedianFinder) FindMedian() float64 {
-    if len(this.small) > len(this.large) {
-        return float64(-1 * this.small[0])
-    } else if len(this.large) > len(this.small) {
-        return float64(this.large[0])
-    }
-    return float64(-1 * this.small[0] + this.large[0]) / 2
-}
