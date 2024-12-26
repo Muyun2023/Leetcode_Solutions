@@ -10,7 +10,6 @@ func maxProduct(nums []int) int {
     return res
 }
 
-// Golang does not have a built-in max for integers
 func max(a int, b int) int {
     if (a > b) {
         return a
@@ -18,7 +17,6 @@ func max(a int, b int) int {
     return b
 }
 
-// Golang does not have a built-in min for integers
 func min(a int, b int) int {
     if (a < b) {
         return a
