@@ -1,7 +1,6 @@
 func shortestPathBinaryMatrix(grid [][]int) int {
 	rows, cols := len(grid), len(grid[0])
-	// if top-left or bottom-right == 1
-	// there is no clear path
+
 	if grid[0][0] == 1 || grid[rows-1][cols-1] == 1 {
 		return -1
 	}
@@ -15,8 +14,7 @@ func shortestPathBinaryMatrix(grid [][]int) int {
 		cell := queue[0]
 		queue = queue[1:]
 		r, c, d := cell[0], cell[1], cell[2]
-		// if we reached bottom-right
-		// returns the current distance
+
 		if r == rows-1 && c == cols-1 {
 			return d
 		}
