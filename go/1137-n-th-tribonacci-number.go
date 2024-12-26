@@ -1,8 +1,3 @@
-package main
-
-func main() {
-
-}
 
 func tribonacci(n int) int {
 	t := [3]int{0, 1, 1}
