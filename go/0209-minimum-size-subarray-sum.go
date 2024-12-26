@@ -1,8 +1,3 @@
-/*
-Time: O(n)
-Space: O(1)
-*/
-
 func minSubArrayLen(target int, nums []int) int {
 	minSize := len(nums) + 1
 	L := 0
