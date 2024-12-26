@@ -26,14 +26,5 @@ func countSubIslands(grid1 [][]int, grid2 [][]int) int {
         res = dfs(r, c + 1) && res
         return res
     }
-    
-    count := 0
-    for r := 0; r < ROWS; r++ {
-        for c := 0; c < COLS; c++ {
-            if grid2[r][c] != 0 && !visit[r*COLS + c] && dfs(r, c) {
-                count += 1
-            }
-        }
-    }
     return count
 }
