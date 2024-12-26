@@ -1,11 +1,3 @@
-package main
-
-import "math"
-
-func main() {
-	
-}
-
 type BrowserHistory struct {
 	history []string
 	current int
