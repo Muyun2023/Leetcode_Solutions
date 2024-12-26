@@ -1,11 +1,3 @@
-package main
-
-import "sort"
-
-func main() {
-
-}
-
 type UnionFind struct {
 	parent []int
 	rank   []int
