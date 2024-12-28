@@ -1,5 +1,3 @@
-package main
-
 func combinationSum(candidates []int, target int) [][]int {
 	ans := make([][]int, 0)
 	curr := make([]int, 0)
