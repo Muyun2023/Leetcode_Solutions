@@ -1,7 +1,3 @@
-package main
-
-import "sort"
-
 func combinationSum2(candidates []int, target int) [][]int {
 	ans := make([][]int, 0)
 	curr := make([]int, 0)
