@@ -1,5 +1,3 @@
-package main
-
 func subsets(nums []int) [][]int {
 	ans := make([][]int, 0)
 	curr := make([]int, 0)
