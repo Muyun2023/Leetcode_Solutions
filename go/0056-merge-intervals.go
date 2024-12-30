@@ -1,5 +1,3 @@
-import "sort"
-
 func merge(intervals [][]int) [][]int {
 	const (
 		start = 0
