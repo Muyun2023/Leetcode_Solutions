@@ -1,5 +1,4 @@
 func levelOrder(root *TreeNode) [][]int {
-	// nil check
 		if root == nil {
 			return nil
 		}
@@ -10,9 +9,9 @@ func levelOrder(root *TreeNode) [][]int {
 		q[0] = root
 		for len(q) > 0 {
 			curLen := len(q)
-			//add elements to the queue per level
+			
 			for i := 0; i < curLen; i++ {
-			  //queue implementation : delete element from front(1st element of slice)
+			
 				node := q[0]
 				q = q[1:]
 				
