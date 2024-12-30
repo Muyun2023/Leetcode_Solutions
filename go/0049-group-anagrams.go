@@ -1,5 +1,3 @@
-package main
-
 func groupAnagrams(strs []string) [][]string {
     anagramMap := make(map[[26]int][]string)
     for _, s := range strs {
