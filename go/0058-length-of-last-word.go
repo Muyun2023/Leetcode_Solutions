@@ -11,4 +11,4 @@ func lengthOfLastWord(s string) int {
 	}
 
 	return l
-}å
+}
