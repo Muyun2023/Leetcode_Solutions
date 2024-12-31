@@ -1,5 +1,3 @@
-package main
-
 func solveNQueens(n int) [][]string {
 	ans, curr := make([][]string, 0), make([]string, 0)
 	column, diag1, diag2 := make(map[int]int), make(map[int]int), make(map[int]int)
