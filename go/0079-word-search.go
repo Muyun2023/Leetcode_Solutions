@@ -1,5 +1,3 @@
-package main
-
 func exist(board [][]byte, word string) bool {
 	n := len(board)
 	m := len(board[0])
