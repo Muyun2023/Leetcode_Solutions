@@ -1,7 +1,3 @@
-package main
-
-import "strings"
-
 func generateParenthesis(n int) []string {
 	var stack []string
 	var res []string
