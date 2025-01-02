@@ -15,9 +15,9 @@ func search(nums []int, target int) int {
             }
         } else {
             if target < nums[mid] || target > nums[right] {
-                right = mid - 1
+                right = mid + 1
             } else {
-                left = mid + 1
+                left = mid - 1
             }
         }
     }
