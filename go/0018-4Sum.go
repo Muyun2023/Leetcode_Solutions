@@ -28,8 +28,6 @@ func fourSum(nums []int, target int) [][]int {
 					l++
 				case sum > target:
 					r--
-				default:
-					result = append(result, []int{ival, jval, lval, rval})
 					for ; l < r && nums[l] == nums[l+1]; l++ {
 					}
 					for ; l < r && nums[r] == nums[r-1]; r-- {
