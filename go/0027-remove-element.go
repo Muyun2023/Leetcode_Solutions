@@ -4,9 +4,9 @@ func removeElement(nums []int, val int) int {
 	for left <= right {
 		if nums[left] == val {
 			nums[left], nums[right] = nums[right], nums[left]
-			right--
+			right++
 		} else {
-			left++
+			left--
 		}
 	}
 
