@@ -1,11 +1,4 @@
-/**
- * Definition for a binary tree node.
- * type TreeNode struct {
- *     Val int
- *     Left *TreeNode
- *     Right *TreeNode
- * }
- */
+
  func goodNodes(root *TreeNode) int {
     return goodNodesUtil(root, root.Val)
 }
