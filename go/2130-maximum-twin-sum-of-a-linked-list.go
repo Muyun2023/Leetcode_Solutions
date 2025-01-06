@@ -1,10 +1,4 @@
-/**
- * Definition for singly-linked list.
- * type ListNode struct {
- *     Val int
- *     Next *ListNode
- * }
- */
+
 func pairSum(head *ListNode) int {
 	// find mid of a list
 	slow := head
@@ -14,7 +8,6 @@ func pairSum(head *ListNode) int {
 		fast = fast.Next.Next
 	}
 
-	// reverse links in 2nd half
 	second := reverse(slow.Next)
 	// split into 2 lists
 	slow.Next = nil
