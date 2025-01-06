@@ -1,5 +1,3 @@
-import "sort"
-
 func kthLargestNumber(nums []string, k int) string {
 	sort.Slice(nums, func(i, j int) bool {
 		if len(nums[i]) != len(nums[j]) {
