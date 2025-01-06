@@ -17,5 +17,3 @@ func swapNodes(head *ListNode, k int) *ListNode {
 
 	return head
 }
-//Time: O(n)
-//Space: O(1)
