@@ -1,8 +1,3 @@
-/*
-Time: O(n)
-Space: O(1)
-*/
-
 func arraySign(nums []int) int {
     neg := 0
     for _, n := range nums {
