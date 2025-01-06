@@ -12,7 +12,6 @@ func pairSum(head *ListNode) int {
 	// split into 2 lists
 	slow.Next = nil
 
-	// traverse two lists with pointers and compare twin sum
 	first := head
 	var maxSum int
 	for first != nil && second != nil {
