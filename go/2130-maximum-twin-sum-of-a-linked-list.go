@@ -39,5 +39,3 @@ func max(a, b int) int {
 	}
 	return b
 }
-//Time: O(n)
-//Space: O(1)
