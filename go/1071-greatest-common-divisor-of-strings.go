@@ -1,11 +1,3 @@
-package main
-
-import "strings"
-
-func main() {
-
-}
-
 func gcdOfStrings(str1 string, str2 string) string {
 	len1, len2 := len(str1), len(str2)
 	var isDivisor func(l int) bool
