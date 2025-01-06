@@ -11,7 +11,7 @@ func minCostConnectPoints(points [][]int) int {
 			adj[j] = append(adj[j], []int{dist, i})
 		}
 	}
-	// prims
+
 	res := 0
 	visited := make(map[int]bool)
 
