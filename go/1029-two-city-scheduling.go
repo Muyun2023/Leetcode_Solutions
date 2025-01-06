@@ -1,11 +1,3 @@
-package main
-
-import "sort"
-
-func main() {
-	
-}
-
 func twoCitySchedCost(costs [][]int) int {
     sort.Slice(costs, func(a, b int) bool { return costs[a][1] - costs[a][0] < costs[b][1] - costs[b][0]});
 
