@@ -1,11 +1,3 @@
-package main
-
-import "math"
-
-func main() {
-
-}
-
 func shuffle(nums []int, n int) []int {
 	for i := 0; i < n; i++ {
 		nums[i] = nums[i] << 10
