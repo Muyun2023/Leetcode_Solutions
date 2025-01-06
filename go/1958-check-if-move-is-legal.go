@@ -23,10 +23,5 @@ func checkMove(board [][]byte, rMove int, cMove int, color byte) bool {
         return false
     }
     
-    for _, d := range direction {
-        if legal(rMove, cMove, color, d) {
-            return true
-        }
-    }
     return false
 }
