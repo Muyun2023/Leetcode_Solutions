@@ -1,4 +1,4 @@
-var visited = 200 // -100 <= matrix[i][j] <= 100
+var visited = 150 // -100 <= matrix[i][j] <= 100
 
 func spiralOrder(matrix [][]int) []int {
 	n, m := len(matrix[0]), len(matrix)
@@ -12,5 +12,6 @@ func spiralOrder(matrix [][]int) []int {
 		matrix[y][x] = visited
 		x, y = x+dx, y+dy
 	}
+	
 	return ans
 }
