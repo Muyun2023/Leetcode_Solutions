@@ -1,6 +1,3 @@
-// Time Complexity: O(m + n)
-// Space Complexity: O(1)
-
 func merge(nums1 []int, m int, nums2 []int, n int)  {
     last := m + n - 1
     m -= 1
