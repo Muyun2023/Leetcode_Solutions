@@ -1,11 +1,3 @@
-type SummaryRanges struct {
-	numSet map[int]bool
-}
-
-func Constructor() SummaryRanges {
-	return SummaryRanges{numSet: map[int]bool{}}
-}
-
 func (this *SummaryRanges) AddNum(value int) {
 	this.numSet[value] = true
 }
