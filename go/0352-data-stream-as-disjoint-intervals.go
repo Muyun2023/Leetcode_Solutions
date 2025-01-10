@@ -1,7 +1,3 @@
-package main
-
-import "sort"
-
 type SummaryRanges struct {
 	numSet map[int]bool
 }
