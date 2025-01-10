@@ -1,9 +1,3 @@
-package main
-
-func main() {
-
-}
-
 func maxSubarraySumCircular(nums []int) int {
 	globalMax, globalMin := nums[0], nums[0]
 	currentMax, currentMin := 0, 0
@@ -31,10 +25,4 @@ func max(a, b int) int {
 	}
 	return b
 }
-
-func min(a, b int) int {
-	if a < b {
-		return a
-	}
-	return b
-}
+// this method is vlid for only a>b
