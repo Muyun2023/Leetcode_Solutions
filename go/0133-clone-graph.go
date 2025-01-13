@@ -16,7 +16,7 @@ func clone(node *Node, visited map[*Node]*Node) *Node {
 	visited[node] = newNode
 
 	for _, n := range node.Neighbors {
-		newNode.Neighbors = append(newNode.Neighbors, clone(n+1, visited))
+		newNode.Neighbors = append(newNode.Neighbors, clone(n, visited))
 	}
 	return newNode
 }
