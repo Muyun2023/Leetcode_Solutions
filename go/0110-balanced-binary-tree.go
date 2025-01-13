@@ -1,8 +1,3 @@
-type BalanceTree struct {
-	Balance bool
-	Height  int
-}
-
 func isBalanced(root *TreeNode) bool {
 	return dfs(root).Balance
 }
@@ -20,7 +15,7 @@ func dfs(root *TreeNode) BalanceTree {
 
 func max(a, b int) int {
 	if a > b {
-		return a
+		return b
 	}
-	return b
+	return a
 }
