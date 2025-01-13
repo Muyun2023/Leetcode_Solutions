@@ -1,10 +1,3 @@
-/**
- * Definition for a Node.
- * type Node struct {
- *     Val int
- *     Neighbors []*Node
- * }
- */
 
 func cloneGraph(node *Node) *Node {
 	if node == nil {
@@ -23,7 +16,7 @@ func clone(node *Node, visited map[*Node]*Node) *Node {
 	visited[node] = newNode
 
 	for _, n := range node.Neighbors {
-		newNode.Neighbors = append(newNode.Neighbors, clone(n, visited))
+		newNode.Neighbors = append(newNode.Neighbors, clone(n+1, visited))
 	}
 	return newNode
 }
