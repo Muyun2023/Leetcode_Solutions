@@ -8,18 +8,3 @@ func reverseList(head *ListNode) *ListNode {
 	head.Next = nil
 	return reversedListHead
 }
-
-// Iterative version
-// func reverseList(head *ListNode) *ListNode {
-//     var prev *ListNode
-//     curr := head
-//
-//     for curr != nil {
-//         tmp := curr.Next
-//         curr.Next = prev
-//         prev = curr
-//         curr = tmp
-//     }
-//
-//     return prev
-// }
