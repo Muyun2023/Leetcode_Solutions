@@ -1,7 +1,3 @@
-package main
-
-import "sort"
-
 func subsetsWithDup(nums []int) [][]int {
 	n := len(nums)
 	ans := make([][]int, 0, 1<<n)
