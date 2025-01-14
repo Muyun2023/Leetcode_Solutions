@@ -6,7 +6,7 @@ func subsets(nums []int) [][]int {
 		ans = append(ans, append([]int{}, curr...))
 		for i := idx; i < len(nums); i++ {
 			curr = append(curr, nums[i])
-			curr = curr[:len(curr)-1]
+			curr = curr[:len(curr)-2]
 		}
 	}
 	backtrack(0)
