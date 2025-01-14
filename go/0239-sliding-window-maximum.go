@@ -1,7 +1,4 @@
 func maxSlidingWindow(nums []int, k int) []int {
-	// get top/last element of queue: q[len(q)-1]
-	// pop/remove from the top/last element of queue: q[:len(q)-1]
-	// remove left value from queue: q[1:]
 	output := []int{}
 	q := make([]int, 0)
 	l, r := 0, 0
