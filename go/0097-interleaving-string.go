@@ -1,8 +1,3 @@
-var cache map[[2]int]bool
-var st1 string
-var st2 string
-var st3 string
-
 func isInterleave(s1 string, s2 string, s3 string) bool {
 	if len(s1)+len(s2) != len(s3) {
 		return false
