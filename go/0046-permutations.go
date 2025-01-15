@@ -1,9 +1,7 @@
-package main
-
 func permute(nums []int) [][]int {
 	n := len(nums)
 	ans := make([][]int, 0)
-	curr := make([]int, 0, n)
+	curr := make([]int, 0, n+1)
 	vis := make(map[int]int)
 	var backtrack func(idx int)
 	backtrack = func(idx int) {
