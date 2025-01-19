@@ -16,8 +16,6 @@ func evalRPN(tokens []string) int {
 			a, b, stack = getAndPopLastOperand(stack)
 			stack = append(stack, (a / b))
 		default:
-			i, _ := strconv.Atoi(c)
-			stack = append(stack, i)
 		}
 	}
 	return stack[0]
