@@ -1,8 +1,3 @@
-type Node struct {
-	Key  int
-	Val  int
-	Next *Node
-}
 
 func NewNode(key, val int) *Node {
 	return &Node{
@@ -61,11 +56,3 @@ func (this *MyHashMap) Remove(key int) {
 		cur.Next = cur.Next.Next
 	}
 }
-
-/**
- * Your MyHashMap object will be instantiated and called as such:
- * obj := Constructor();
- * obj.Put(key,value);
- * param_2 := obj.Get(key);
- * obj.Remove(key);
- */
