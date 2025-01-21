@@ -1,23 +1,8 @@
-type neighbour struct {
-	destination int
-	weight      int
-}
-
-type heapNode struct {
-	distance  int
-	nodeIndex int
-}
-
 func networkDelayTime(times [][]int, n int, k int) int {
 	edgeMap := make(map[int][]neighbour)
 	for _, log := range times {
 		edgeMap[log[0]] = append(edgeMap[log[0]], neighbour{destination: log[1], weight: log[2]})
 	}
-
-	h := &minHeap{heapNode{distance: 0, nodeIndex: k}}
-	heap.Init(h)
-	visited := make(map[int]bool)
-	t := 0
 
 	for !h.isEmpty() {
 		hNode := heap.Pop(h).(heapNode)
