@@ -15,15 +15,6 @@ func swimInWater(grid [][]int) int {
 	}
 	return minTime
 }
-
-func initVisitedArray(gridSize int) [][]bool {
-	visited := make([][]bool, gridSize)
-	for i := range visited {
-		visited[i] = make([]bool, gridSize)
-	}
-	return visited
-}
-
 func canReach(grid [][]int, visited [][]bool, x, y, gridSize, level int) bool {
 	visited[x][y] = true
 	for i := 0; i < 4; i++ {
