@@ -1,5 +1,4 @@
 
-
 func myAtoi(s string) int {
 	sign := 1
 	sum := 0
@@ -23,7 +22,7 @@ func myAtoi(s string) int {
 					return math.MaxInt32
 				}
 			}
-			// check if there is  at last one int is parsed
+
 		} else if sum >= 0 && NumIntParsed > 0 {
 			return sign * sum
 		} else {
