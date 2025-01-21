@@ -27,20 +27,8 @@ func myAtoi(s string) int {
 		} else if sum >= 0 && NumIntParsed > 0 {
 			return sign * sum
 		} else {
-			//-------------- checking for edge case ---------------
-			// check for ++ and +- case
-			if plusFound || sign == -1 {
-				return 0
-			}
-			if v == '-' {
-				sign = -1
-			} else if v == '+' {
-				plusFound = true
 
-			} else if v == ' ' {
-				// to check for + serounded with spaces
-				if plusFound {
-					return 0
+	
 				}
 				continue
 			} else {
