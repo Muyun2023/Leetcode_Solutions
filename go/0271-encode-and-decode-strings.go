@@ -1,12 +1,3 @@
-import (
-	"strings"
-	"strconv"
-)
-
-type Codec struct {
-	b strings.Builder
-}
-
 func (codec *Codec) Encode(strs []string) string {
 	defer codec.b.Reset()
 
