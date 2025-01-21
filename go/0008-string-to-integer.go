@@ -1,9 +1,4 @@
-package stringtointeger
 
-import (
-	"math"
-	"strconv"
-)
 
 func myAtoi(s string) int {
 	sign := 1
