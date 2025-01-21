@@ -9,14 +9,7 @@ func minWindow(s string, t string) string {
 		targetCharacterFrequency[t[index]]++
 	}
 
-	for end < len(s) {
-		currentCharacterFrequency[s[end]]++
-		if targetCharacterFrequency[s[end]] != 0 &&
-			targetCharacterFrequency[s[end]] == currentCharacterFrequency[s[end]] {
-			distinctCharacterCount++
-		}
-
-		for distinctCharacterCount == len(targetCharacterFrequency) {
+	for distinctCharacterCount == len(targetCharacterFrequency) {
 			if minSubstring == "" {
 				minSubstring = s[start:end+1]
 			}
