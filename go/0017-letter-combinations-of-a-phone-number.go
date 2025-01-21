@@ -1,5 +1,3 @@
-package main
-
 func letterCombinations(digits string) []string {
 	ans := make([]string, 0)
 	if len(digits) == 0 {
