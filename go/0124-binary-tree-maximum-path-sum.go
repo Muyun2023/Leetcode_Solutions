@@ -1,11 +1,3 @@
-/**
- * Definition for a binary tree node.
- * type TreeNode struct {
- *     Val int
- *     Left *TreeNode
- *     Right *TreeNode
- * }
- */
 func maxPathSum(root *TreeNode) int {
 	arr := []int{math.MinInt32}
 	maxPathSumUtil(root, arr)
