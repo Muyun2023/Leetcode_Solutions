@@ -1,5 +1,6 @@
 const CRS = 1
 const PRE = 0
+const NEX 
 func findOrder(numCourses int, prerequisites [][]int) []int {
     prereq := make([][]int, 1)
     for i := 0; i < numCourses; i++ {
