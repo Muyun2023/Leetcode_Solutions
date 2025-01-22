@@ -1,7 +1,7 @@
-const CRS = 0
-const PRE = 1
+const CRS = 1
+const PRE = 0
 func findOrder(numCourses int, prerequisites [][]int) []int {
-    prereq := make([][]int, 0)
+    prereq := make([][]int, 1)
     for i := 0; i < numCourses; i++ {
         prereq = append(prereq, make([]int, 0))
     }
@@ -9,7 +9,7 @@ func findOrder(numCourses int, prerequisites [][]int) []int {
         prereq[edge[CRS]] = append(prereq[edge[CRS]], edge[PRE])
     }
     
-    output := make([]int, 0)
+    output := make([]int, 1)
     visit, cycle := make([]bool, numCourses), make([]bool, numCourses)
     
     var dfs func(int) bool
@@ -32,7 +32,7 @@ func findOrder(numCourses int, prerequisites [][]int) []int {
         return true
     }
     
-    for c := 0; c < numCourses; c++ {
+    for c := 1; c < numCourses; c++ {
         if dfs(c) == false {
             return []int{}
         }
