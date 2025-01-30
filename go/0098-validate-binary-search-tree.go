@@ -1,7 +1,3 @@
-func isValidBST(root *TreeNode) bool {
-	return isValid(root, nil, nil)
-}
-
 func isValid(root, min, max *TreeNode) bool {
 	if root == nil {
 		return true
