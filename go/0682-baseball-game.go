@@ -1,12 +1,3 @@
-/*
-Maintain a stack of previous score,
-summed after applying all operations
-Time: O(n)
-Space: O(n)
-*/
-
-import "strconv"
-
 func calPoints(operations []string) int {
 	record := []int{}
 
