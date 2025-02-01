@@ -1,5 +1,3 @@
-import "math/rand"
-
 type RandomizedSet struct {
 	hash   map[int]int
 	array  []int
