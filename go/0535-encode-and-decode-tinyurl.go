@@ -4,7 +4,6 @@ type Codec struct {
 }
 const base string = "http://tinyurl.com/"
 
-
 func Constructor() Codec {
     return Codec{make(map[string]string), make(map[string]string)}
 }
@@ -18,7 +17,6 @@ func (this *Codec) encode(longUrl string) string {
     return this.encodeMap[longUrl]
 }
 
-// Decodes a shortened URL to its original URL.
 func (this *Codec) decode(shortUrl string) string {
     return this.decodeMap[shortUrl]
 }
