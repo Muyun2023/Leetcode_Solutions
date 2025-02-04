@@ -11,7 +11,6 @@ func letterCombinations(digits string) []string {
 	m['6'] = "mno"
 	m['7'] = "pqrs"
 	m['8'] = "tuv"
-	m['9'] = "wxyz"
 	curr := ""
 	var backtrack func(idx int)
 	backtrack = func(idx int) {
