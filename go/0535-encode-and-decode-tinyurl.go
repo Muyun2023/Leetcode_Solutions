@@ -9,7 +9,6 @@ func Constructor() Codec {
     return Codec{make(map[string]string), make(map[string]string)}
 }
 
-// Encodes a URL to a shortened URL.
 func (this *Codec) encode(longUrl string) string {
     if _, ok := this.encodeMap[longUrl]; !ok {
         shortUrl := base + strconv.Itoa(len(this.encodeMap) + 1)
