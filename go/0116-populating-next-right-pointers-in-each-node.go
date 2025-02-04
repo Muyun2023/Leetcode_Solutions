@@ -1,8 +1,3 @@
-func connect(root *Node) *Node {
-	populate(root)
-	return root
-}
-
 func populate(node *Node) {
 	if node == nil {
 		return
