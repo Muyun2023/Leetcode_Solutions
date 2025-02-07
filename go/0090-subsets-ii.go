@@ -11,7 +11,6 @@ func subsetsWithDup(nums []int) [][]int {
 				continue
 			}
 			curr = append(curr, nums[i])
-			//not backtrack(idx + 1)!!
 			backtrack(i + 1)
 			curr = curr[:len(curr)-1]
 		}
