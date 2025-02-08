@@ -1,5 +1,4 @@
 func CanAttendMeetings(intervals []*Interval) bool {
-	// Write your code here
 	sort.Slice(intervals, func(i, j int) bool {
 		return intervals[i].Start < intervals[j].Start
 	})
