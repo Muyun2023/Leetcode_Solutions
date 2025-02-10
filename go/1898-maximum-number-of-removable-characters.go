@@ -12,9 +12,8 @@ func maximumRemovals(s string, p string, removable []int) int {
 			r = m - 1
 		}
 	}
-	return r + 1
+	return r
 }
-
 func isSubsequence(s, p string, remove map[int]bool) bool {
 	i, j := 0, 0
 	for i < len(s) && j < len(p) {
