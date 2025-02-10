@@ -25,9 +25,6 @@ func orangesRotting(grid [][]int) int {
             
             for _, d := range directions {
                 row, col := cell[ROW] + d[ROW], cell[COL] + d[COL]
-
-                // if in bounds and notrotten, make rotten
-                // and add to q
                 if(
                     row >= 0 && row < len(grid) &&
                     col >= 0 && col < len(grid[0]) &&
