@@ -1,6 +1,4 @@
 func isAlienSorted(words []string, order string) bool {
-    // first differing char
-    // if word A is prefix of word B, word B must be AFTER word A
     orderInd := make(map[byte]int)
     for i := 0; i < len(order); i++ {
         orderInd[order[i]] = i
