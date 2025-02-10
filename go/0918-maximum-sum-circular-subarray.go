@@ -18,11 +18,9 @@ func maxSubarraySumCircular(nums []int) int {
 	}
 
 }
-
 func max(a, b int) int {
 	if a > b {
 		return a
 	}
 	return b
 }
-// this method is vlid for only a>b
