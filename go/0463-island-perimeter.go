@@ -11,8 +11,8 @@ func islandPerimeter(grid [][]int) int {
         }
         
         visit[i*COLS + j] = true
-        perim := dfs(i, j + 1)
-        perim += dfs(i + 1, j)
+        perim := dfs(i+1, j)
+        perim += dfs(i, j+1)
         perim += dfs(i, j - 1)
         perim += dfs(i - 1, j)
         return perim
