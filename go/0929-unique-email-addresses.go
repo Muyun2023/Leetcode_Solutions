@@ -1,5 +1,3 @@
-import "strings"
-
 func numUniqueEmails(emails []string) int {
 	ans, uniqueAddressMap := 0, make(map[string]struct{})
 	for _, email := range emails {
