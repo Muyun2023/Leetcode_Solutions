@@ -1,8 +1,8 @@
 func getConcatenation(nums []int) []int {
   n := len(nums)
-	ans := make([]int, 2*n)	//lets make an array of int type and 2*n size
+	ans := make([]int, 2*n)	
 	i := 0
-	for i < n {		//implementing for loop for the given condition
+	for i < n {
 		ans[i] = nums[i]
 		ans[i+n] = nums[i]
 		i++
