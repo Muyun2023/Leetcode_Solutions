@@ -1,8 +1,3 @@
-import (
-	"math"
-	"sort"
-)
-
 func maxFrequency(nums []int, k int) int {
 	sort.Ints(nums)
 
