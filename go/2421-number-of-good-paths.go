@@ -10,7 +10,6 @@ func Constructor(n int) UnionFind {
 		parent, rank,
 	}
 }
-
 func (u *UnionFind) find(i int) int {
 	for i != u.parent[i] {
 		u.parent[i] = u.parent[u.parent[i]]
@@ -19,14 +18,12 @@ func (u *UnionFind) find(i int) int {
 
 	return i
 }
-
 func (u *UnionFind) union(a, b int) bool {
 	aRoot, bRoot := u.find(a), u.find(b)
 
 	if aRoot == bRoot {
 		return false
 	}
-
 	if u.rank[aRoot] < u.rank[bRoot] {
 		u.parent[aRoot] = bRoot
 		u.rank[bRoot] += u.rank[aRoot]
@@ -37,7 +34,6 @@ func (u *UnionFind) union(a, b int) bool {
 
 	return true
 }
-
 func getAdjList(edges [][]int) map[int][]int {
 	adj := make(map[int][]int)
 
@@ -50,7 +46,6 @@ func getAdjList(edges [][]int) map[int][]int {
 
 	return adj
 }
-
 func getValToIndex(vals []int) map[int][]int {
 	valToIndex := make(map[int][]int)
 
@@ -60,7 +55,6 @@ func getValToIndex(vals []int) map[int][]int {
 
 	return valToIndex
 }
-
 func numberOfGoodPaths(vals []int, edges [][]int) int {
 	adj := getAdjList(edges)
 	valToIndex := getValToIndex(vals)
@@ -90,6 +84,5 @@ func numberOfGoodPaths(vals []int, edges [][]int) int {
 			res += count[uf.find(i)]
 		}
 	}
-
 	return res
 }
