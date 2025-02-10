@@ -1,8 +1,3 @@
-type UnionFind struct {
-	parent []int
-	rank   []int
-}
-
 func Constructor(n int) UnionFind {
 	parent := make([]int, n)
 	rank := make([]int, n)
