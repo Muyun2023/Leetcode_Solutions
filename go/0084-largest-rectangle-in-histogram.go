@@ -4,7 +4,8 @@ type StackValue struct {
 }
 
 func largestRectangleArea(heights []int) int {
-	stack := []StackValue{} // pair: {index, height}
+	 // pair: {index, height}
+	stack := []StackValue{}
 	maxArea := 0
 	var start int
 
