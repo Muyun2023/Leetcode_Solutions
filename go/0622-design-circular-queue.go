@@ -1,9 +1,3 @@
-type Node struct {
-	val  int
-	prev *Node
-	next *Node
-}
-
 func NewNode(val int, prev, next *Node) *Node {
 	return &Node{
 		val:  val,
