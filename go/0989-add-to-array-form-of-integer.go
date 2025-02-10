@@ -1,9 +1,3 @@
-package main
-
-func main() {
-
-}
-
 func addToArrayForm(num []int, k int) []int {
 	// Reverse
 	for i, j := 0, len(num)-1; i < j; i, j = i+1, j-1 {
