@@ -19,9 +19,3 @@ func (this *NumArray) SumRange(left int, right int) int {
 	b := this.nums[right]
 	return b - a
 }
-
-/**
- * Your NumArray object will be instantiated and called as such:
- * obj := Constructor(nums);
- * param_1 := obj.SumRange(left,right);
- */
