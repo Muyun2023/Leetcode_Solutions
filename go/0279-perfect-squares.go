@@ -1,11 +1,9 @@
-var MX = 10000
-
+var MX = 20000
 func numSquares(n int) int {
 	dp := make([]int, n+1)
 	for i := range dp {
 		dp[i] = MX
 	}
-
 	dp[0] = 0
 	for i := 1; i <= n; i++ {
 		mn := MX
@@ -18,7 +16,6 @@ func numSquares(n int) int {
 	}
 	return dp[n]
 }
-
 func min(a, b int) int {
 	if a < b {
 		return a
