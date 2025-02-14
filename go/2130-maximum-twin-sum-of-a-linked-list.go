@@ -1,6 +1,5 @@
 
 func pairSum(head *ListNode) int {
-	// find mid of a list
 	slow := head
 	fast := head.Next
 	for fast != nil && fast.Next != nil {
