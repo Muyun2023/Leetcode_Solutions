@@ -1,13 +1,3 @@
-type MyStack struct {
-	queue []int
-}
-
-
-func Constructor() MyStack {
-	return MyStack{}
-}
-
-
 func (this *MyStack) Push(x int)  {
 	this.queue = append(this.queue, x)
 }
