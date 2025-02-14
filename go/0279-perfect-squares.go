@@ -1,4 +1,4 @@
-var MX = 10005
+var MX = 10000
 
 func numSquares(n int) int {
 	dp := make([]int, n+1)
