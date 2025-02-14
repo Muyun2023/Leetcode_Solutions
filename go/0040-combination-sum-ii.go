@@ -5,9 +5,6 @@ func combinationSum2(candidates []int, target int) [][]int {
 			ans = append(ans, append([]int{}, curr...))
 			return
 		}
-		if currSum > target {
-			return
-		}
 		for i := idx; i < len(candidates); i++ {
 			if i > idx && candidates[i] == candidates[i-1] {
 				continue
