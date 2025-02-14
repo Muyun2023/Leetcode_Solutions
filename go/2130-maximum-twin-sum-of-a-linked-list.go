@@ -8,7 +8,6 @@ func pairSum(head *ListNode) int {
 	}
 
 	second := reverse(slow.Next)
-	// split into 2 lists
 	slow.Next = nil
 
 	first := head
