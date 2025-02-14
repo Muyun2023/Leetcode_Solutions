@@ -1,8 +1,4 @@
 func trap(height []int) int {
-    if height == nil {
-        return 0
-    }
-    
     left, right := 0, len(height) - 1
     leftMax, rightMax := height[left], height[right]
     res := 0
