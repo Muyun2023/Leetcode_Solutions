@@ -1,7 +1,4 @@
 func combinationSum2(candidates []int, target int) [][]int {
-	ans := make([][]int, 0)
-	curr := make([]int, 0)
-	sort.Ints(candidates)
 	var backtrack func(idx int, currSum int, curr []int)
 	backtrack = func(idx int, currSum int, curr []int) {
 		if currSum == target {
