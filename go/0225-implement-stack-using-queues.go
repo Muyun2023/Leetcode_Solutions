@@ -2,7 +2,6 @@ func (this *MyStack) Push(x int)  {
 	this.queue = append(this.queue, x)
 }
 
-
 func (this *MyStack) Pop() int {
 	if this.Empty() {
 		return 0
@@ -15,7 +14,6 @@ func (this *MyStack) Pop() int {
 	return elem
 }
 
-
 func (this *MyStack) Top() int {
 	if this.Empty() {
 		return 0
@@ -23,7 +21,6 @@ func (this *MyStack) Top() int {
 
 	return this.queue[len(this.queue) - 1]
 }
-
 
 func (this *MyStack) Empty() bool {
 	return len(this.queue) == 0
