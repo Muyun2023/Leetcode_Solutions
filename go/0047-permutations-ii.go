@@ -2,11 +2,9 @@ func permuteUnique(nums []int) [][]int {
 	numLen := len(nums)
 	res := [][]int{}
 	counter := make(map[int]int)
-
 	for _, n := range nums {
 		counter[n]++
 	}
-
 	var backtrack func([]int, map[int]int)
 
 	backtrack = func(perm []int, counter map[int]int) {
@@ -26,8 +24,6 @@ func permuteUnique(nums []int) [][]int {
 			counter[n]++
 		}
 	}
-
 	backtrack([]int{}, counter)
-
 	return res
 }
