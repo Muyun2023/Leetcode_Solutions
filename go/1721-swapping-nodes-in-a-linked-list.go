@@ -1,4 +1,3 @@
-
 func swapNodes(head *ListNode, k int) *ListNode {
 	curr := head
 	for i := 0; i < k-1; i++ {
