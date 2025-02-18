@@ -1,6 +1,5 @@
 func numOfSubarrays(arr []int, k int, threshold int) int {
 	res := 0
-
 	var sum func([]int) int
 	sum = func(nums []int) int {
 		r := 0
@@ -9,7 +8,6 @@ func numOfSubarrays(arr []int, k int, threshold int) int {
 		}
 		return r
 	}
-
 	curSum := sum(arr[:k-1])
 
 	for i := k - 1; i < len(arr); i++ {
@@ -19,6 +17,5 @@ func numOfSubarrays(arr []int, k int, threshold int) int {
 		}
 		curSum -= arr[i-k+1]
 	}
-
 	return res
 }
