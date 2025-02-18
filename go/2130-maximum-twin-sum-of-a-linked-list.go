@@ -1,4 +1,3 @@
-
 func pairSum(head *ListNode) int {
 	slow := head
 	fast := head.Next
@@ -6,7 +5,6 @@ func pairSum(head *ListNode) int {
 		slow = slow.Next
 		fast = fast.Next.Next
 	}
-
 	second := reverse(slow.Next)
 	slow.Next = nil
 
@@ -19,7 +17,6 @@ func pairSum(head *ListNode) int {
 	}
 	return maxSum
 }
-
 func reverse(node *ListNode) *ListNode {
 	var curr, prev *ListNode = node, nil
 	for curr != nil {
@@ -30,7 +27,6 @@ func reverse(node *ListNode) *ListNode {
 	}
 	return prev
 }
-
 func max(a, b int) int {
 	if a > b {
 		return a
