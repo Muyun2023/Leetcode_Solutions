@@ -22,18 +22,15 @@ func maxProduct(s string) (res int) {
 		}
 		return res
 	}
-
 	max := func(a, b int) int {
 		if a > b {
 			return a
 		}
 		return b
 	}
-
 	for m := 1; m <= mask; m++ {
 		dp[m] = palindromeSize(s, m)
 	}
-
 	for m1 := mask; m1 > 0; m1-- {
 		if dp[m1]*(len(s)-dp[m1]) <= res {
 			continue
