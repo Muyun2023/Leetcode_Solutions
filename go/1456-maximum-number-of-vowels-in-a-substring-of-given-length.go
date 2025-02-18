@@ -6,7 +6,6 @@ func maxVowels(s string, k int) int {
 		'o': true,
 		'u': true,
 	}
-
 	l, cnt, res := 0, 0, 0
 	for r := range len(s) {
 		if vowel[s[r]] {
