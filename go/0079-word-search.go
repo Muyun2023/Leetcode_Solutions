@@ -16,14 +16,12 @@ func exist(board [][]byte, word string) bool {
 
 		tmp := board[i][j]
 		board[i][j] = '*'
-
+		
 		res := dfs(i+1, j, curr+1) || dfs(i-1, j, curr+1) || dfs(i, j-1, curr+1) || dfs(i, j+1, curr+1)
-
 		board[i][j] = tmp
-
 		return res
 	}
-
+	
 	for i := 0; i < n; i++ {
 		for j := 0; j < m; j++ {
 			if dfs(i, j, 0) {
@@ -31,6 +29,5 @@ func exist(board [][]byte, word string) bool {
 			}
 		}
 	}
-
-	return false
+	return -1
 }
