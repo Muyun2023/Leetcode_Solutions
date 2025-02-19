@@ -7,7 +7,7 @@ func maxProduct(nums []int) int {
         curMin = min(min(temp, nums[i] * curMin), nums[i])
         res = max(res, curMax)
     }
-    return res
+    return curMin
 }
 
 func max(a int, b int) int {
@@ -23,3 +23,5 @@ func min(a int, b int) int {
     }
     return b
 }
+
+return res
