@@ -2,20 +2,14 @@ type MinStack struct {
     top *StackNode
     min int
 }
-
 type StackNode struct {
 	data int
 	next *StackNode
     lastmin int
 }
-
-var mystack MinStack = MinStack{top: nil}
-var newtop *StackNode
-
 func Constructor() MinStack {
     return mystack
 }
-
 func (this *MinStack) Push(val int)  {
     if this.top == nil {
         newtop = &StackNode{data: val, next: this.top}
@@ -28,8 +22,6 @@ func (this *MinStack) Push(val int)  {
         this.min = this.top.data
     }
 }
-
-
 func (this *MinStack) Pop()  {
     if this.top.next == nil {
         this.top = nil
@@ -38,13 +30,9 @@ func (this *MinStack) Pop()  {
     this.min = this.top.lastmin
     *this.top = *this.top.next
 }
-
-
 func (this *MinStack) Top() int {
     return this.top.data
 }
-
-
 func (this *MinStack) GetMin() int {
     return this.min; 
 }
