@@ -5,7 +5,6 @@ func twoSum(nums []int, target int) []int {
 		if val, found := m[target-num]; found {
 			return []int{val, idx}
 		}
-
 		m[num] = idx
 	}
 	return nil
