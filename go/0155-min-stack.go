@@ -37,12 +37,3 @@ func (this *MinStack) GetMin() int {
     return this.min; 
 }
 
-
-/**
- * Your MinStack object will be instantiated and called as such:
- * obj := Constructor();
- * obj.Push(val);
- * obj.Pop();
- * param_3 := obj.Top();
- * param_4 := obj.GetMin();
- */
