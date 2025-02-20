@@ -14,7 +14,6 @@ func myAtoi(s string) int {
 			if err == nil {
 				sum = sum*10 + int(n)
 			}
-			// Max and Min int values
 			if sum > math.MaxInt32 {
 				if sign < 0 {
 					return math.MinInt32
