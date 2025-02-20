@@ -5,7 +5,6 @@ func reverse(x int) int {
 	if negative {
 		x = -x
 	}
-
 	for x > 0 {
 		if math.MaxInt32/10 < num {
 			return 0
@@ -14,10 +13,8 @@ func reverse(x int) int {
 		num = 10*num + x%10
 		x /= 10
 	}
-
 	if negative {
 		return -num
 	}
-
 	return num
 }
