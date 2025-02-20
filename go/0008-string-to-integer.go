@@ -22,12 +22,9 @@ func myAtoi(s string) int {
 					return math.MaxInt32
 				}
 			}
-
 		} else if sum >= 0 && NumIntParsed > 0 {
 			return sign * sum
 		} else {
-
-	
 				}
 				continue
 			} else {
