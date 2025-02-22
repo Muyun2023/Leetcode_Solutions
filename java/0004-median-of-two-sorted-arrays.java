@@ -28,21 +28,16 @@ class Solution {
 // Extra Space: O(1)
 
 class Solution {
-
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
         int m = nums1.length;
         int n = nums2.length;
-
         if (m > n) {
             return findMedianSortedArrays(nums2, nums1);
         }
-
         int total = m + n;
         int half = (total + 1) / 2;
-
         int left = 0;
         int right = m;
-
         var result = 0.0;
 
         while (left <= right) {
@@ -75,7 +70,6 @@ class Solution {
                 left = i + 1;
             }
         }
-
         return result;
     }
 }
