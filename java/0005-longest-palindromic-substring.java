@@ -1,20 +1,15 @@
 // Solution: Expanding Around Center
-
 // Time Complexity: O(n^2)
 // Extra Space Complexity: O(1)
 
 class Solution1 {
-
     public String longestPalindrome(String s) {
         int strLength = s.length();
-
         if (strLength < 2) {
             return s;
         }
-
         int resultLength = 0;
         String result = "";
-
         for (int i = 0; i < s.length(); i++) {
             //Odd length
             int left = i, right = i;
@@ -30,7 +25,6 @@ class Solution1 {
                 left -= 1;
                 right += 1;
             }
-
             // even length
             left = i;
             right = i + 1;
@@ -47,18 +41,15 @@ class Solution1 {
                 right += 1;
             }
         }
-
         return result;
     }
 }
 
 // Solution: A more Optimized Expand Around Center
-
 // TIme Complexity: O(n^2)
 // Extra Space Complexity: O(1)
 
 class Solution2 {
-
     public String longestPalindrome(String s) {
         int best = 0;
         int start = 0, end = 0;
@@ -85,13 +76,11 @@ class Solution2 {
                 end = right;
             }
         }
-
         return s.substring(start, end);
     }
 }
 
 // Solution: Dynamic Programming
-
 // Time Complexity: O(n^2)
 // Extra Spce Complexity: O(n^2)
 
@@ -122,7 +111,6 @@ class Solution3 {
                 }
             }
         }
-
         return s.substring(left, right);
     }
 }
