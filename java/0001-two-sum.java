@@ -1,5 +1,4 @@
 class Solution {
-
     public int[] twoSum(int[] nums, int target) {
         HashMap<Integer, Integer> prevMap = new HashMap<>();
 
@@ -10,10 +9,8 @@ class Solution {
             if (prevMap.containsKey(diff)) {
                 return new int[] { prevMap.get(diff), i };
             }
-
             prevMap.put(num, i);
         }
-
         return new int[] {};
     }
 }
