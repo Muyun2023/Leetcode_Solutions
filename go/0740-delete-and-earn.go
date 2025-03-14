@@ -5,7 +5,6 @@ func deleteAndEarn(nums []int) int {
 		if _, ok := count[num]; !ok {
 			unique = append(unique, num)
 		}
-
 		count[num]++
 	}
 	earn1, earn2 := 0, 0
