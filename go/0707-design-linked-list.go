@@ -3,7 +3,6 @@ type Node struct {
 	prev *Node
 	next *Node
 }
-
 func NewNode(val int, prev, next *Node) *Node {
 	return &Node{
 		val:  val,
@@ -11,12 +10,6 @@ func NewNode(val int, prev, next *Node) *Node {
 		next: next,
 	}
 }
-
-type MyLinkedList struct {
-	head *Node
-	tail *Node
-}
-
 func Constructor() MyLinkedList {
 	head := NewNode(-1, nil, nil)
 	tail := NewNode(-1, head, nil)
