@@ -15,7 +15,6 @@ func shortestPathBinaryMatrix(grid [][]int) int {
 		if r == rows-1 && c == cols-1 {
 			return d
 		}
-		// 8-directionally connected cells
 		adjCells := [][2]int{{0, -1}, {0, 1}, {-1, 0}, {1, 0}, {-1, -1}, {1, 1}, {-1, 1}, {1, -1}}
 		for _, adjc := range adjCells {
 			rr, cc := r+adjc[0], c+adjc[1]
