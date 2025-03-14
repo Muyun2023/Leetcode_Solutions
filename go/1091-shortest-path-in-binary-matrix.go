@@ -1,15 +1,12 @@
 func shortestPathBinaryMatrix(grid [][]int) int {
 	rows, cols := len(grid), len(grid[0])
-
 	if grid[0][0] == 1 || grid[rows-1][cols-1] == 1 {
 		return -1
 	}
-
 	seen := make(map[[2]int]bool)
 	seen[[2]int{0, 0}] = true
 	queue := make([][3]int, 0)
 	queue = append(queue, [3]int{0, 0, 1})
-
 	for len(queue) > 0 {
 		cell := queue[0]
 		queue = queue[1:]
