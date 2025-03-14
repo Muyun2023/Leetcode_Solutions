@@ -1,5 +1,4 @@
 var dirs = []int{0, 1, 0, -1, 0}
-
 func swimInWater(grid [][]int) int {
 	gridSize := len(grid)
 	minTime, maxTime := grid[0][0], gridSize*gridSize-1
@@ -34,7 +33,6 @@ func canReach(grid [][]int, visited [][]bool, x, y, gridSize, level int) bool {
 	}
 	return false
 }
-
 func isValidMove(x, y, gridSize int) bool {
 	if y < 0 || x < 0 || y >= gridSize || x >= gridSize {
 		return false
