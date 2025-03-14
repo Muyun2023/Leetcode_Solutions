@@ -1,9 +1,6 @@
 func threeSum(nums []int) [][]int {
 	n := len(nums)
-
-	// Sort the given array
 	sort.Ints(nums)
-
 	var result [][]int
 	for num1Idx := 0; num1Idx < n-2; num1Idx++ {
 		// Skip all duplicates from left
@@ -11,7 +8,6 @@ func threeSum(nums []int) [][]int {
 		if num1Idx > 0 && nums[num1Idx] == nums[num1Idx-1] {
 			continue
 		}
-
 		num2Idx := num1Idx + 1
 		num3Idx := n - 1
 		for num2Idx < num3Idx {
